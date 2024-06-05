@@ -24,6 +24,7 @@
                                 @csrf
                                 @method('DELETE')
                                 <button class="btn btn-danger">Elimina</button>
+                                w
                             </form>
                         </td>
                     </tr>
