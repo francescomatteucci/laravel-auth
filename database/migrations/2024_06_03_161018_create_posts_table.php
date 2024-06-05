@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
+            $table->string('title',150);
+            $table->string('slug')->unique();
+            $table->text('content')->nullable();
             $table->timestamps();
         });
     }
